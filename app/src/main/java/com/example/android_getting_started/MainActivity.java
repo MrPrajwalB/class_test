@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         viewport.setYAxisBoundsManual(true);
         viewport.setXAxisBoundsManual(true);
         viewport.setMinY(0);
-        viewport.setMaxY(100);
+        viewport.setMaxY(300);
         viewport.setMinX(0);
         viewport.setMaxX(100);
         viewport.setScrollable(true);
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             @Override
             public void run() {
                 // we add 100 new entries
-                for (int i = 0; i < 2; i++) {
+                for (int i = 0; i < 100; i++) {
                     runOnUiThread(new Runnable() {
 
                         @Override
